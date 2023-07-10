@@ -6,15 +6,15 @@ spec:
   selector:
     matchLabels:
       app: blog
-    replicas: 2
-    template:
-      metadata:
-        labels:
-          app: blog
-      spec:
-        containers:
-          - name: blog
-            image: rismi/devopsimage1
-            imagePullPolicy: IfNotPresent
-            ports:
-              - containerPort: 8084
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: blog
+    spec:
+      containers:
+        - name: blog
+          image: rismi/devopsimage1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8084
