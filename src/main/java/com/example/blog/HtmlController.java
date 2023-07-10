@@ -20,6 +20,6 @@ public class HtmlController {
   @GetMapping(value = { "/" })
   public String blog(Model model) {
     model.addAttribute("title", "Blog");
-    return "blog";
+    return "blog"
   }
 }
